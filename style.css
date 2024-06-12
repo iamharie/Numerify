@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -22,7 +22,7 @@ body {
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  border-bottom: 7px solid #461515;
 }
 
 main {
@@ -57,7 +57,7 @@ h1 {
 }
 
 .number {
-  background: #eee;
+  background: #b92e2e;
   color: #333;
   font-size: 6rem;
   width: 15rem;
@@ -117,4 +117,106 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* Responsive design */
+@media (min-width: 320px) {
+  h1 {
+    font-size: 1rem;
+    color: orangered;
+  }
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 1rem;
+    color: green;
+  }
+}
+
+@media (min-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left,
+  .right {
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: aqua;
+  }
+
+  .number {
+    font-size: 3rem;
+    width: 8rem;
+    padding: 2rem 0;
+  }
+
+  .guess {
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    width: 80%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .message {
+    margin-bottom: 6rem;
+  }
+
+  .label-score {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 760px) {
+  h1 {
+    font-size: 3rem;
+    color: pink;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    justify-content: space-between;
+  }
+
+  .left,
+  .right {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: rgb(79, 100, 79);
+  }
+
+  .number {
+    font-size: 7rem;
+    width: 13rem;
+    padding: 3rem 0;
+  }
+
+  .guess {
+    font-size: 4.5rem;
+    padding: 3rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
+
+  .message {
+    margin-bottom: 10rem;
+  }
+
+  .label-score {
+    margin-bottom: 2.5rem;
+  }
 }
